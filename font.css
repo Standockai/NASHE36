@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "GolosText-Black";
+  src: url("/Font/static/GolosText-Black.ttf") format("woff2"),
+    url("/Font/static/Golos-Text-Black.woff") format("woff");
+  font-weight: black; /* Начертание шрифта (normal, bold и др.) */
+  font-style: black; /* Стиль шрифта (normal, italic и др.) */
+}
+
+@font-face {
+  font-family: "GolosText-Bold";
+  src: url("/Font/static/GolosText-Bold.woff2") format("woff2"),
+    url("/Font/static/GolosText-Bold.woff") format("woff");
+  font-weight: bold; /* Начертание шрифта (normal, bold и др.) */
+  font-style: bold; /* Стиль шрифта (normal, italic и др.) */
+}
+
+@font-face {
+  font-family: "GolosText-Semibold";
+  src: url("/Font/static/GolosText-Semibold.woff2") format("woff2"),
+    url("/Font/static/GolosText-Semibold.woff") format("woff");
+  font-weight: normal; /* Начертание шрифта (normal, bold и др.) */
+  font-style: normal; /* Стиль шрифта (normal, italic и др.) */
+}
+
+@font-face {
+  font-family: "GolosText-Medium";
+  src: url("/Font/static/GolosText-Medium.woff2") format("woff2"),
+    url("/Font/static/GolosText-Medium.woff") format("woff");
+  font-weight: medium; /* Начертание шрифта (normal, bold и др.) */
+  font-style: medium; /* Стиль шрифта (normal, italic и др.) */
+}
+
+@font-face {
+  font-family: "GolosText-regular";
+  src: url("/Font/static/GolosText-Regular.woff2") format("woff2"),
+    url("/Font/static/GolosText-Regular.woff") format("woff");
+  font-weight: normal; /* Начертание шрифта (normal, bold и др.) */
+  font-style: normal; /* Стиль шрифта (normal, italic и др.) */
+}
+
+@font-face {
+  font-family: "GolosText-ExtraBold";
+  src: url("/Font/static/GolosText-ExtraBold.woff2") format("woff2"),
+    url("/Font/static/GolosText-ExtraBold.woff") format("woff");
+  font-weight: normal; /* Начертание шрифта (normal, bold и др.) */
+  font-style: normal; /* Стиль шрифта (normal, italic и др.) */
+}
+@font-face {
+  font-family: "AKONY";
+  src: url("/Font/AKONY.woff2") format("woff2"),
+    url("/Font/AKONY.woff") format("woff");
+  font-weight: medium; /* Начертание шрифта (normal, bold и др.) */
+  font-style: medium; /* Стиль шрифта (normal, italic и др.) */
+}
