@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  background-color: rgba(8, 20, 76, 1);
+  background-color: white;
 }
 a {
   text-decoration: none;
@@ -30,7 +30,6 @@ a {
 }
 .logo {
   margin-left: 190px;
-  height: 52px;
   width: 198px;
 }
 /* header кончился */
@@ -81,7 +80,11 @@ a {
   font-size: 20px;
   border-radius: 30px;
   text-align: center;
-  background-color: rgba(2, 6, 25, 0.75);
+  background: linear-gradient(
+    120deg,
+    rgba(25, 65, 255, 1),
+    rgba(0, 127, 255, 1)
+  );
   color: white;
   font-family: "GolosText-Bold";
 }
@@ -96,7 +99,12 @@ a {
   border-radius: 30px;
   text-decoration: none;
   font-size: 30px;
-  background-color: rgba(5, 13, 51, 1);
+  background: linear-gradient(
+    to right,
+    rgba(140, 25, 255, 1),
+    rgba(19, 146, 248, 1),
+    rgba(0, 219, 206, 1)
+  );
   color: white;
   font-family: "GolosText-Bold";
 }
@@ -110,6 +118,7 @@ a {
 .first-title {
   margin-top: 40px;
   text-align: center;
+  color: black;
 }
 /* ДАЛЬШЕ ПОЛНАЯ ПОПА МЕГА УЛЬТРА СЛАЙДИЭР ТАК НАЗИВАЕМИ В ОТДЕЛЬНОМ ФАЙЛЕ*/
 /* КОНЕЦ БЛОКА ВАЖНО ЗНАТЬ */
@@ -125,7 +134,7 @@ a {
   text-align: center;
   font-family: "AKONY";
   font-size: 30px;
-  color: white;
+  color: black;
 }
 .article {
   display: grid;
@@ -137,7 +146,11 @@ a {
   width: 380px;
   height: auto;
   border-radius: 30px;
-  background-color: rgba(0, 127, 255, 1);
+  background: linear-gradient(
+    70deg,
+    rgba(76, 166, 255, 1),
+    rgba(23, 59, 229, 1)
+  );
 }
 .article-img {
   width: 380px;
@@ -171,7 +184,11 @@ a {
   padding: 15px 30px;
   border-width: 0px;
   font-size: 30px;
-  background-color: rgba(15, 39, 153, 1);
+  background: linear-gradient(
+    270deg,
+    rgba(76, 166, 255, 1),
+    rgba(23, 59, 229, 1)
+  );
   border-radius: 30px;
   color: white;
   font-family: "GolosText-Bold";
@@ -183,21 +200,22 @@ a {
   text-align: center;
   font-family: "AKONY";
   font-size: 30px;
-  color: white;
+  color: black;
 }
 .sveshak-card {
+  border: 2px solid black;
+  border-radius: 100px;
   display: flex;
   align-items: center;
   margin-bottom: 27px;
 }
 .sveshak-img {
-  border: 2px solid white;
+  border: 2px solid black;
   border-radius: 100px;
 }
 .sveshak-main-theme {
-  margin-left: 16px;
-  font-size: 20px;
-  color: white;
+  margin: 20px;
+  color: black;
   font-family: "GolosText-regular";
 }
 .sveshak-form {
@@ -208,9 +226,98 @@ a {
   padding: 15px 30px;
   border-width: 0px;
   font-size: 30px;
-  background-color: rgba(255, 25, 64, 1);
+  background: linear-gradient(
+    270deg,
+    rgba(76, 166, 255, 1),
+    rgba(23, 59, 229, 1)
+  );
   border-radius: 30px;
   color: white;
   font-family: "GolosText-Bold";
 }
 /* КОНЕЦ БЛОКОВ СТАТЬИ И СВЕЖАК */
+/* НАЧАЛО АФИША СОБЫТИЙ */
+.poster {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 30px;
+  color: black;
+  font-family: "AKONY";
+}
+.event-wrapp {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 620px);
+  grid-template-rows: auto;
+  grid-gap: 40px;
+}
+.event-card {
+  display: flex;
+  background: linear-gradient(
+    95deg,
+    rgba(140, 25, 255, 1) 0%,
+    rgba(19, 146, 248, 1) 65%,
+    rgba(0, 219, 206, 1) 100%
+  );
+  border-radius: 30px;
+}
+.event-img {
+  border-radius: 30px;
+  object-fit: cover;
+}
+.event-text-wrapp {
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-right: 15px;
+}
+.event-title {
+  margin: 0px;
+  font-size: 30px;
+  color: white;
+  font-family: "GolosText-Bold";
+}
+.event-subhead {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 15px;
+  color: white;
+  font-family: "GolosText-Bold";
+}
+.event-time {
+  border-radius: 30px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 10px;
+  background-color: rgba(0, 127, 255, 1);
+  color: white;
+  font-size: 20px;
+  font-family: "GolosText-Bold";
+}
+.events-form {
+  text-align: center;
+}
+.events-button {
+  text-align: center;
+  border-radius: 30px;
+  border-width: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  background: linear-gradient(
+    95deg,
+    rgba(140, 25, 255, 1) 0%,
+    rgba(19, 146, 248, 1) 65%,
+    rgba(0, 219, 206, 1) 100%
+  );
+  color: white;
+  font-size: 30px;
+  font-family: "GolosText-Bold";
+}
+/* КОНЕЦ АФИША СОБЫТИЙ */
+/* НАЧАЛО FOOTER */
+/* КОНЕЦ FOOTER */
