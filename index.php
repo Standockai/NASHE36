@@ -215,8 +215,54 @@ updateCards(); // Инициализация слайдера
     </div>
     <!-- КОНЕЦ АФИШИ СОБЫТИЙ -->
     <!-- НАЧАЛО FOOTER -->
+<section class="footer">
     <div class="container">
+        <div class="footer-wrapp">
+            <div class="footer-column">
+                <img class="footer-nashelogo" src="/media/N36_logo-blue.png">
+                <p class="slogan">Город глазами молодёжи</p>
+                <img class="footer-rosmollogo" src="/media/footer/rosmol.png">
+            </div>
+            <div class="footer-column">
+                <a href="#" class="footer-link">О нас</a>
+                <a href="#" class="footer-link">Авторы</a>
+                <a href="#" class="footer-link">Контакты</a>
+                <a href="#" class="footer-link">Документация</a>
+            </div>
+            <div class="footer-column">
+                <a href="#" class="footer-bot">Есть новость?</a>
+                <a href="#" class="footer-bot">НАПИШИ БОТУ!</a>
+                <form>
+                    <button class="footer-button">ТЫК</button>
+                </form>
+                <a href="#" class="mail">main@n-36.ru</a>
+                <a href="#" class="tel">+7 (473)205-06-20</a>                
+            </div>
+            <div class="footer-column">
+                <a href="#"><img class="footer-social" src="/media/footer/icon-vk.png"></a>
+                <a href="#"><img class="footer-social" src="/media/footer/icon-tg.png"></a>
+                <a href="#"><img class="footer-social" src="/media/footer/icon-youtube.png"></a>            
+            </div>
+        </div>
+        <div class="footer-info">
+Все права на материалы, находящиеся на сайте n-36.ru, (http://n-36.ru/) охраняются в соответствии с законодательством РФ, в том числе об авторском праве и смежных правах. При любом использовании материалов сайта ссылка на n-36.ru (http://n-36.ru/) обязательна. Редакция не несет ответственности за информацию и мнения, высказанные в комментариях читателей и новостных материалах, составленных на основе сообщений читателей.</br>
+</br>
+СМИ - сетевое издание «НАШЕ:36» зарегистрировано в Федеральной службе по надзору в сфере связи, информационных технологий и массовых коммуникаций. Свидетельство о регистрации средства массовой информации Эл № ФС77-86378 от 27 ноября 2023 г.</br>
+</br>
+СМИ - сетевое издание «НАШЕ:36» создано при финансовой поддержке Федерального агентства по делам молодёжи © ООО «ММЧ».
+Учредитель и редакция - ООО «ММЧ». Главный редактор сетевого издания Д.Г. Ерошенко.</br></br> Адрес редакции: 394036, РФ, г. Воронеж, ул. Цюрупы, д. 1. Почта: main@n-36.ru. Тел.: +7 (473) 205-06-20</br>
+</br>
+Политика обработки персональных данных (https://www.n-36.ru/policy)</br>
+Информация о погоде предоставлена Центром «ФОБОС». (http://www.fobos.tv/)</br>
+Информация о пробках предоставлена ООО «Яндекс.Пробки». (http://www.yandex.ru/)</br>
+В сетевом издании могут быть использованы материалы интернет-ресурсов Facebook и Instagram, владельцем которых является компания Meta Platforms Inc., запрещённая на территории Российской Федерации как экстремистская.</br>
+</br>
+Мнения авторов статей, опубликованных на сайте n-36.ru,</br> 
+а также комментариев пользователей к материалам сайта</br> 
+могут не совпадать с позицией редакции сайта «Наше:36».
     </div>
+    <div class="copyright">(С) ООО «ММЧ»  2023-2024</div>
+</section>
     <!-- КОНЕЦ FOOTER -->
 </body>
 </html>
