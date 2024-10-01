@@ -1,387 +1,408 @@
 body {
-  margin: 0px;
-  padding: 0px;
-  background-color: white;
-}
-a {
-  text-decoration: none;
-}
-.container {
-  margin-left: 320px;
-  margin-right: 320px;
-}
-/* header */
-.navigation {
-  display: flex;
-  align-items: center;
-}
-.nav_wrapp {
-  padding-top: 35px;
-  padding-left: 13px;
-  padding-right: 13px;
-  padding-bottom: 17px;
-  margin-right: 20px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  color: white;
-  background-color: rgba(0, 127, 255, 1);
-  font-family: "GolosText-Semibold";
-  font-size: 36px;
-}
-.logo {
-  margin-left: 190px;
-  width: 198px;
-}
-/* header кончился */
-/* НАЧАЛО ПРЕВЬЮ С ВАЖНОЙ НОВОСТЬЮ ИЛИ ТЕМОЙ */
-.preview {
-  margin-top: 40px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("media/preview.png");
-  height: 720px;
-  max-width: 1280px;
-  border-radius: 30px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-/* экология */
-.main-theme-wrapp {
-  margin-top: 272px;
-}
-.main-theme {
-  font-family: "AKONY";
-  font-size: 67px;
-  color: white;
-  text-align: center;
-}
-/* подзаголовок */
-.subhead {
-  margin-top: 44px;
-  font-size: 30px;
-  text-align: center;
-  color: white;
-  font-family: "AKONY";
-}
-/* контейнер для блоков с вопросами */
-.question-wrapp {
-  margin-top: 23px;
-  margin-right: 76px;
-  margin-left: 76px;
-  display: flex;
-}
-/* вопросы */
-.question {
-  padding-top: 28px;
-  padding-bottom: 28px;
-  padding-left: 12px;
-  padding-right: 12px;
-  margin-right: 27px;
-  font-size: 20px;
-  border-radius: 30px;
-  text-align: center;
-  background: linear-gradient(
-    120deg,
-    rgba(25, 65, 255, 1),
-    rgba(0, 127, 255, 1)
-  );
-  color: white;
-  font-family: "GolosText-Bold";
-}
-/* кнопка смотреть */
-.watch {
-  margin-left: 800px;
-  margin-top: 30px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-size: 30px;
-  background: linear-gradient(
-    to right,
-    rgba(140, 25, 255, 1),
-    rgba(19, 146, 248, 1),
-    rgba(0, 219, 206, 1)
-  );
-  color: white;
-  font-family: "GolosText-Bold";
-}
-/* КОНЕЦ ПРЕВЬЮ С ВАЖНОЙ НОВОСТЬЮ ИЛИ ТЕМОЙ */
-/* НАЧАЛО БЛОКА ВАЖНО ЗНАТЬ */
-.title {
-  font-family: "AKONY";
-  font-size: 30px;
-  color: white;
-}
-.first-title {
-  margin-top: 40px;
-  text-align: center;
-  color: black;
-}
-/* ДАЛЬШЕ ПОЛНАЯ ПОПА МЕГА УЛЬТРА СЛАЙДИЭР ТАК НАЗИВАЕМИ В ОТДЕЛЬНОМ ФАЙЛЕ*/
-/* КОНЕЦ БЛОКА ВАЖНО ЗНАТЬ */
-/* НАЧАЛО БЛОКОВ СТАТЬИ И СВЕЖАК */
-.article-sveshak-wrapp {
-  display: flex;
-}
-.article-wrapp {
-  display: flex;
-  flex-direction: column;
-}
-.article-text {
-  text-align: center;
-  font-family: "AKONY";
-  font-size: 30px;
-  color: black;
-}
-.article {
-  display: grid;
-  grid-template-columns: repeat(2, 380px);
-  grid-template-rows: auto;
-  grid-gap: 40px;
-}
-.article-card {
-  width: 380px;
-  height: auto;
-  border-radius: 30px;
-  background: linear-gradient(
-    70deg,
-    rgba(76, 166, 255, 1),
-    rgba(23, 59, 229, 1)
-  );
-}
-.article-img {
-  width: 380px;
-  height: auto;
-  border-radius: 30px;
-  object-fit: cover;
-}
-.article-main-theme {
-  margin: 0px;
-  padding-top: 14px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 16px;
-  font-size: 20px;
-  color: white;
-  font-family: "GolosText-Bold";
-}
-.article-subhead {
-  margin: 0px;
-  padding-bottom: 13px;
-  padding-left: 16px;
-  font-size: 15px;
-  color: white;
-  font-family: "GolosText-regular";
-}
-.article-form {
-  margin-top: 35px;
-  text-align: center;
-}
-.article-button {
-  padding: 15px 30px;
-  border-width: 0px;
-  font-size: 30px;
-  background: linear-gradient(
-    270deg,
-    rgba(76, 166, 255, 1),
-    rgba(23, 59, 229, 1)
-  );
-  border-radius: 30px;
-  color: white;
-  font-family: "GolosText-Bold";
-}
-.sveshak-wrapp {
-  margin-left: 40px;
-}
-.sveshak-text {
-  text-align: center;
-  font-family: "AKONY";
-  font-size: 30px;
-  color: black;
-}
-.sveshak-card {
-  border: 2px solid black;
-  border-radius: 100px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 27px;
-}
-.sveshak-img {
-  border: 2px solid black;
-  border-radius: 100px;
-}
-.sveshak-main-theme {
-  margin: 20px;
-  color: black;
-  font-family: "GolosText-regular";
-}
-.sveshak-form {
-  margin-top: 31px;
-  text-align: center;
-}
-.sveshak-button {
-  padding: 15px 30px;
-  border-width: 0px;
-  font-size: 30px;
-  background: linear-gradient(
-    270deg,
-    rgba(76, 166, 255, 1),
-    rgba(23, 59, 229, 1)
-  );
-  border-radius: 30px;
-  color: white;
-  font-family: "GolosText-Bold";
-}
-/* КОНЕЦ БЛОКОВ СТАТЬИ И СВЕЖАК */
-/* НАЧАЛО АФИША СОБЫТИЙ */
-.poster {
-  text-align: center;
-  margin-top: 40px;
-  font-size: 30px;
-  color: black;
-  font-family: "AKONY";
-}
-.event-wrapp {
-  margin-top: 30px;
-  display: grid;
-  grid-template-columns: repeat(2, 620px);
-  grid-template-rows: auto;
-  grid-gap: 40px;
-}
-.event-card {
-  display: flex;
-  background: linear-gradient(
-    95deg,
-    rgba(140, 25, 255, 1) 0%,
-    rgba(19, 146, 248, 1) 65%,
-    rgba(0, 219, 206, 1) 100%
-  );
-  border-radius: 30px;
-}
-.event-img {
-  border-radius: 30px;
-  object-fit: cover;
-}
-.event-text-wrapp {
-  padding-left: 15px;
-  padding-top: 15px;
-  padding-right: 15px;
-}
-.event-title {
-  margin: 0px;
-  font-size: 30px;
-  color: white;
-  font-family: "GolosText-Bold";
-}
-.event-subhead {
-  margin-top: 20px;
-  margin-bottom: 40px;
-  font-size: 15px;
-  color: white;
-  font-family: "GolosText-Bold";
-}
-.event-time {
-  border-radius: 30px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-bottom: 10px;
-  background-color: rgba(0, 127, 255, 1);
-  color: white;
-  font-size: 20px;
-  font-family: "GolosText-Bold";
-}
-.events-form {
-  text-align: center;
-}
-.events-button {
-  text-align: center;
-  border-radius: 30px;
-  border-width: 0px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-top: 20px;
-  margin-bottom: 50px;
-  background: linear-gradient(
-    95deg,
-    rgba(140, 25, 255, 1) 0%,
-    rgba(19, 146, 248, 1) 65%,
-    rgba(0, 219, 206, 1) 100%
-  );
-  color: white;
-  font-size: 30px;
-  font-family: "GolosText-Bold";
-}
-/* КОНЕЦ АФИША СОБЫТИЙ */
-/* НАЧАЛО FOOTER */
-.footer {
-  margin: 0px;
-  padding: 0px;
-  background: rgba(2, 6, 25, 1);
-}
-.footer-wrapp {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-.slogan {
-  width: 250px;
-  font-size: 25px;
-  color: white;
-  font-family: "GolosText-SemiBold";
-}
-.footer-column {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-evenly;
-}
-.footer-link {
-  font-size: 25px;
-  color: white;
-  font-family: "GolosText-Regular";
-}
-.footer-bot {
-  font-size: 30px;
-  color: white;
-  font-family: "GolosText-SemiBold";
-}
-.footer-button {
-  padding: 5px 85px;
-  border-radius: 30px;
-  border-width: 0px;
-  font-size: 30px;
-  color: white;
-  background-color: rgba(0, 127, 255, 1);
-  font-family: "GolosText-SemiBold";
-}
-.mail {
-  font-size: 28px;
-  color: white;
-  font-family: "GolosText-Regular";
-}
-.tel {
-  font-size: 28px;
-  color: white;
-  font-family: "GolosText-Regular";
-}
-.footer-info {
-  margin-top: 65px;
-  font-size: 16px;
-  color: white;
-  font-family: "GolosText-Regular";
-}
-.copyright {
-  padding-bottom: 25px;
-  margin-top: 25px;
-  font-size: 15px;
-  color: white;
-  font-family: "GolosText-Bold";
-}
-/* КОНЕЦ FOOTER */
+    margin: 0;
+    padding: 0;
+    background-color: rgba(229, 242, 255, 1);
+    overflow-x: hidden; /* Запрет на горизонтальную прокрутку */
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .container {
+    margin: 0 auto; /* Центрирование контейнера */
+    width: 1280px; /* Фиксированная ширина */
+  }
+  /* header */
+  .navigation {
+    display: flex;
+  }
+  .nav_wrapp {
+    padding-top: 5px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-bottom: 17px;
+    margin-right: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: white;
+    background-color: rgba(0, 127, 255, 1);
+    font-family: "GolosText-Semibold";
+    font-size: 36px;
+  }
+  .logo {
+    align-self: center;
+    margin-left: 190px;
+    width: 171px;
+  }
+  /* header кончился */
+  /* НАЧАЛО ПРЕВЬЮ С ВАЖНОЙ НОВОСТЬЮ ИЛИ ТЕМОЙ */
+  .preview {
+    height: 720px; /* Фиксированная высота */
+    margin-top: 40px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("media/preview.png");
+    height: 720px;
+    max-width: 1280px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  /* экология */
+  .main-theme-wrapp {
+    margin-top: 272px;
+  }
+  .main-theme {
+    font-family: "AKONY";
+    font-size: 67px;
+    color: white;
+    text-align: center;
+  }
+  /* подзаголовок */
+  .subhead {
+    margin-top: 44px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    font-family: "AKONY";
+  }
+  /* контейнер для блоков с вопросами */
+  .question-wrapp {
+    margin-top: 23px;
+    margin-right: 76px;
+    margin-left: 76px;
+    display: flex;
+  }
+  /* вопросы */
+  .question {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 27px;
+    font-size: 20px;
+    border-radius: 30px;
+    text-align: center;
+    background: linear-gradient(
+      120deg,
+      rgba(25, 65, 255, 1),
+      rgba(0, 127, 255, 1)
+    );
+    color: white;
+    font-family: "GolosText-Bold";
+  }
+  /* кнопка смотреть */
+  .watch {
+    margin-left: 800px;
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 30px;
+    background: linear-gradient(
+      to right,
+      rgba(140, 25, 255, 1),
+      rgba(19, 146, 248, 1),
+      rgba(0, 219, 206, 1)
+    );
+    color: white;
+    font-family: "GolosText-Bold";
+  }
+  /* КОНЕЦ ПРЕВЬЮ С ВАЖНОЙ НОВОСТЬЮ ИЛИ ТЕМОЙ */
+  /* НАЧАЛО БЛОКА ВАЖНО ЗНАТЬ */
+  .title {
+    font-family: "AKONY";
+    font-size: 30px;
+    color: white;
+  }
+  .first-title {
+    margin-top: 40px;
+    text-align: center;
+    color: black;
+    filter: drop-shadow(2px 2px 10px black);
+  }
+  /* ДАЛЬШЕ ПОЛНАЯ ПОПА МЕГА УЛЬТРА СЛАЙДИЭР ТАК НАЗИВАЕМИ В ОТДЕЛЬНОМ ФАЙЛЕ*/
+  /* КОНЕЦ БЛОКА ВАЖНО ЗНАТЬ */
+  /* НАЧАЛО БЛОКОВ СТАТЬИ И СВЕЖАК */
+  .article-sveshak-wrapp {
+    display: flex;
+  }
+  .article-wrapp {
+    display: flex;
+    flex-direction: column;
+  }
+  .article-text {
+    text-align: center;
+    font-family: "AKONY";
+    font-size: 30px;
+    color: black;
+    filter: drop-shadow(2px 2px 10px black);
+  }
+  .article {
+    display: grid;
+    grid-template-columns: repeat(2, 380px);
+    grid-template-rows: auto;
+    grid-gap: 40px;
+  }
+  .article-card {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: auto;
+    border-radius: 30px;
+    background: linear-gradient(
+      70deg,
+      rgba(76, 166, 255, 1),
+      rgba(23, 59, 229, 1)
+    );
+  }
+  .article-img {
+    width: 380px;
+    height: auto;
+    border-radius: 30px;
+    object-fit: cover;
+  }
+  .article-main-theme {
+    margin: 0px;
+    padding-top: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    font-size: 20px;
+    color: white;
+    font-family: "GolosText-Bold";
+  }
+  .article-subhead {
+    margin: 0px;
+    padding-bottom: 13px;
+    padding-left: 16px;
+    font-size: 15px;
+    color: white;
+    font-family: "GolosText-regular";
+  }
+  .article-form {
+    margin-top: 35px;
+    text-align: center;
+  }
+  .article-button {
+    padding: 15px 30px;
+    border-width: 0px;
+    font-size: 30px;
+    background: linear-gradient(
+      270deg,
+      rgba(76, 166, 255, 1),
+      rgba(23, 59, 229, 1)
+    );
+    border-radius: 30px;
+    color: white;
+    font-family: "GolosText-Bold";
+  }
+  .sveshak-wrapp {
+    margin-left: 40px;
+  }
+  .sveshak-text {
+    text-align: center;
+    font-family: "AKONY";
+    font-size: 30px;
+    color: black;
+    filter: drop-shadow(2px 2px 10px black);
+  }
+  .sveshak-card {
+    border: 2px solid rgba(0, 127, 255, 1);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 27px;
+  }
+  .sveshak-img {
+    filter: drop-shadow(0px 0px 5px blue);
+    border-radius: 100px;
+  }
+  .sveshak-main-theme {
+    margin: 20px;
+    color: black;
+    font-family: "GolosText-regular";
+  }
+  .sveshak-form {
+    margin-top: 31px;
+    text-align: center;
+  }
+  .sveshak-button {
+    padding: 15px 30px;
+    border-width: 0px;
+    font-size: 30px;
+    background: linear-gradient(
+      270deg,
+      rgba(76, 166, 255, 1),
+      rgba(23, 59, 229, 1)
+    );
+    border-radius: 30px;
+    color: white;
+    font-family: "GolosText-Bold";
+  }
+  /* КОНЕЦ БЛОКОВ СТАТЬИ И СВЕЖАК */
+  /* НАЧАЛО АФИША СОБЫТИЙ */
+  .poster {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+    color: black;
+    font-family: "AKONY";
+    filter: drop-shadow(2px 2px 10px black);
+  }
+  .event-wrapp {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 620px);
+    grid-template-rows: auto;
+    grid-gap: 40px;
+  }
+  .event-card {
+    display: flex;
+    background: linear-gradient(
+      95deg,
+      rgba(140, 25, 255, 1) 0%,
+      rgba(19, 146, 248, 1) 65%,
+      rgba(0, 219, 206, 1) 100%
+    );
+    border-radius: 30px;
+  }
+  .event-img {
+    border-radius: 30px;
+    object-fit: cover;
+  }
+  .event-text-wrapp {
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+  }
+  .event-title {
+    margin: 0px;
+    font-size: 30px;
+    color: white;
+    font-family: "GolosText-Bold";
+  }
+  .event-subhead {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: white;
+    font-family: "GolosText-Bold";
+  }
+  .event-time {
+    border-radius: 30px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgba(0, 127, 255, 1);
+    color: white;
+    font-size: 20px;
+    font-family: "GolosText-Bold";
+  }
+  .events-form {
+    text-align: center;
+  }
+  .events-button {
+    text-align: center;
+    border-radius: 30px;
+    border-width: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background: linear-gradient(
+      95deg,
+      rgba(140, 25, 255, 1) 0%,
+      rgba(19, 146, 248, 1) 65%,
+      rgba(0, 219, 206, 1) 100%
+    );
+    color: white;
+    font-size: 30px;
+    font-family: "GolosText-Bold";
+  }
+  /* КОНЕЦ АФИША СОБЫТИЙ */
+  /* НАЧАЛО FOOTER */
+  .footer {
+    margin: 0px;
+    padding: 0px;
+    background: rgba(2, 6, 25, 1);
+  }
+  .footer-wrapp {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .slogan {
+    width: 250px;
+    font-size: 25px;
+    color: white;
+    font-family: "GolosText-SemiBold";
+  }
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+  .footer-link {
+    font-size: 25px;
+    color: white;
+    font-family: "GolosText-Regular";
+  }
+  .footer-link:hover {
+    color: rgb(19, 129, 19);
+  }
+  .footer-bot {
+    font-size: 30px;
+    color: white;
+    font-family: "GolosText-SemiBold";
+  }
+  .footer-button {
+    padding: 5px 85px;
+    border-radius: 30px;
+    border-width: 0px;
+    font-size: 30px;
+    color: white;
+    background-color: rgba(0, 127, 255, 1);
+    font-family: "GolosText-SemiBold";
+  }
+  .footer-button:hover {
+    color: black;
+  }
+  .mail {
+    font-size: 28px;
+    color: white;
+    font-family: "GolosText-Regular";
+  }
+  .mail:hover {
+    color: rgb(19, 129, 19);
+  }
+  .tel {
+    font-size: 28px;
+    color: white;
+    font-family: "GolosText-Regular";
+  }
+  .tel:hover {
+    color: rgb(19, 129, 19);
+  }
+  .footer-info {
+    margin-top: 65px;
+    font-size: 16px;
+    color: white;
+    font-family: "GolosText-Regular";
+  }
+  .copyright {
+    padding-bottom: 25px;
+    margin-top: 25px;
+    font-size: 15px;
+    color: white;
+    font-family: "GolosText-Bold";
+  }
+  /* КОНЕЦ FOOTER */
