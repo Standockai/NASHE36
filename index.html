@@ -2,26 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1280"> <!-- Установлено фиксированное значение ширины -->
     <link rel="stylesheet" href="font.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="proverka.css">
+    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="slider.css">
     <title>НАШЕ:36</title>
 </head>
 <noscript>В вашем браузере отключен JavaScript, включите для нормального функционирования сайта</noscript>
 <body>
-    <header id="header" class="header">
-        <div class="container">
-            <div class="navigation">
-                <a href="#" class="nav_wrapp">Новости</a>
-                <a href="#" class="nav_wrapp">Темы</a>
-                <a href="#" class="nav_wrapp">Афиша</a>
-                <a href="#" class="nav_wrapp">Рубрики</a>
-                <a href="#" class="nav_wrapp">Видео</a>
-                <img src="media/Наше_36.png" alt="LOGO" class="logo">
-            </div>
-        </div>
-    </header>
+<?php include 'header.php'; ?>
     <!-- ПРЕВЬЮ С ВАЖНОЙ НОВОСТЬЮ ИЛИ ТЕМОЙ -->
     <div class="container">
         <div class="preview">
@@ -30,70 +20,56 @@
                 <div class="subhead">Будущее планеты: 10 важных вопросов об экологии</div>
             </div>
             <div class="question-wrapp">
-            <div class="question">Как рост загразнения воздуха влияет на наше здоровье и окружающую среду?</div>
-            <div class="question">Какие проблемы создают пластиковые отходы в наших океанах?</div>
-            <div class="question">Почему вырубка лесов является серьезной экологической проблемой?</div>
+                <div class="question">Как рост загразнения воздуха влияет на наше здоровье и окружающую среду?</div>
+                <div class="question">Какие проблемы создают пластиковые отходы в наших океанах?</div>
+                <div class="question">Почему вырубка лесов является серьезной экологической проблемой?</div>
             </div>
             <a href="https://youtu.be/Y7KsKtcm7yw?si=9kmA5g2Bdag5x9Ge" class="watch">СМОТРЕТЬ</a>
         </div>
     </div>
     <!-- ВАЖНО ЗНАТЬ -->
-     <div class="container">
-     <div class="title first-title">ВАЖНО ЗНАТЬ</div>
-<div class="slider">
-    <div class="card">
-        <img src="media/img1.png" alt="Card 1">
-        <p class="type">ГУБЕРНАТОР</p>
-        <p class="slider-text">Губернатор наградил бывшего главу водоканала</p>
-        <p class="slider-time">18 июля,12:35</p>
+    <div class="container">
+        <div class="title first-title">ВАЖНО ЗНАТЬ</div>
+        <div class="slider" id="slider">
+            <div class="slides-container" id="slidesContainer">
+                <div class="slide">
+                    <img src="media/img1.png" class="slider-img">
+                    <h2 class="slider-type">ГУБЕРНАТОР</h2>
+                    <p class="slider-text">Губернатор наградил бывшего главу водоканала</p>
+                    <span class="slider-subhead">18 июля, 11:10</span>
+                </div>
+                <!-- Остальные слайды -->
+            </div>
+        </div>
+        <div class="controls">
+            <button class="button-prev" onclick="prevSlide()">&#10094;</button>
+            <button class="button-next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <script>
+            let currentIndex = 0;
+            const slidesToShow = 3;
+
+            function showSlide(index) {
+                const slides = document.querySelectorAll('.slide');
+                const totalSlides = slides.length;
+                currentIndex = (index + Math.ceil(totalSlides / slidesToShow)) % Math.ceil(totalSlides / slidesToShow);
+                const slidesContainer = document.getElementById('slidesContainer');
+                slidesContainer.style.transform = `translateX(-${currentIndex * (100 / slidesToShow)}%)`;
+            }
+
+            function nextSlide() {
+                showSlide(currentIndex + 1);
+            }
+
+            function prevSlide() {
+                showSlide(currentIndex - 1);
+            }
+        </script>
     </div>
-    <div class="card active">
-        <img src="media/img2.png" alt="Card 2">
-        <p class="type">ГУБЕРНАТОР</p>
-        <p class="slider-text">Власти снова планируют ввести безлимитный проездной в Воронеже</p>
-        <p class="slider-time">18 июля,12:35</p>
-    </div>
-    <div class="card">
-        <img src="media/img3.png" alt="Card 3">
-        <p class="type">ГУБЕРНАТОР</p>
-        <p class="slider-text">Штормовое предупреждение. Жара до 37° накроет Воронежскую область на несколько дней</p>
-        <p class="slider-time">18 июля,12:35</p>
-    </div>
-    <!-- Добавьте дополнительные карточки здесь -->
-</div>
-<div class="buttons">
-    <button class="button" id="prev">◀</button>
-    <button class="button" id="next">▶</button>
-</div>
-<script>
-const cards = document.querySelectorAll(".card");
-let currentIndex = 1;
+    <!-- Остальная часть кода -->
+</body>
+</html>
 
-function updateCards() {
-  cards.forEach((card, index) => {
-    card.classList.remove("active");
-    if (index === currentIndex) {
-      card.classList.add("active");
-    }
-    const offset = (index - currentIndex) * 5; // Изменено смещение
-    card.style.transform = `translateX(${offset}%)`;
-    card.style.opacity = index === currentIndex ? 1 : 0.5;
-  });
-}
-
-document.getElementById("next").addEventListener("click", () => {
-  currentIndex = (currentIndex + 1) % cards.length;
-  updateCards();
-});
-
-document.getElementById("prev").addEventListener("click", () => {
-  currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-  updateCards();
-});
-
-updateCards(); // Инициализация слайдера
-</script>
-     </div>
      <!-- КОНЕЦ ВАЖНО ЗНАТЬ -->
       <!-- СТАТЬИ И СВЕЖАК -->
     <div class="container">
@@ -180,7 +156,7 @@ updateCards(); // Инициализация слайдера
                     <div class="event-text-wrapp">
                 <p class="event-title">Посещение Океанариума</p>
                 <p class="event-subhead">Воронежский океанариум - единственный в Центральном Черноземье (экономической зоне, обьяединяющий 5 федеральных субьектов).</p>
-                <div class="event-time">До 31 августа</div>
+                <span class="event-time">До 31 августа</span>
                     </div>
             </div>
             <div class="event-card">
@@ -188,7 +164,7 @@ updateCards(); // Инициализация слайдера
                     <div class="event-text-wrapp">
                 <p class="event-title">"БеспринцЫпные чтения". Гала-концерт</p>
                 <p class="event-subhead">БеспринцЫпные чтения - один из самых ярких и необычных проектов последнего времени, в рамках которо современную отечественную...</p>
-                <div class="event-time">10 и 11 августа</div>
+                <span class="event-time">10 и 11 августа</span>
                     </div>
             </div>
             <div class="event-card">
@@ -196,7 +172,7 @@ updateCards(); // Инициализация слайдера
                     <div class="event-text-wrapp">
                 <p class="event-title">IOWA. Summer Sound x билайн</p>
                 <p class="event-subhead">Этим летом Москва и Екатеринбург будут петь самые знаменитые хиты группы IOWA. Нам же нравится одно и то же? Мы угадали?</p>
-                <div class="event-time">25 июля в 19:30</div>
+                <span class="event-time">25 июля в 19:30</span>
                     </div>
             </div>
             <div class="event-card">
@@ -204,7 +180,7 @@ updateCards(); // Инициализация слайдера
                     <div class="event-text-wrapp">
                 <p class="event-title">Турнир по баскетболу 2x2 и NBA2K</p>
                 <p class="event-subhead">Заявляйся в отрытые турниры по баскетболу 2x2 и по кибербаскетболу и выигрывай джерси игроков сборной России.</p>
-                <div class="event-time">20 июля в 14:00</div>
+                <span class="event-time">20 июля в 14:00</span>
                     </div>
             </div>
         </div>
